@@ -20,7 +20,7 @@ RUN apt install -y \
 RUN apt-get clean -y
 
 RUN pip3 install --upgrade pip
-RUN pip3 install neovim jedi
+RUN pip3 install neovim jedi black flake8
 
 RUN curl -fLo ~/.config/nvim/init.vim --create-dirs https://raw.githubusercontent.com/kriwil/dotfiles/master/vimrc
 RUN curl -fLo ~/.local/share/nvim/site/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
